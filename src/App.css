@@ -1,38 +1,66 @@
-.App {
+.header{
+color:#ffffff;
+background: rgba(0, 0, 0, 0.8);
+height:12vh;
+}
+.logo{
+  color: 
+  #ffffff;
+}
+.linkText {
+  color: #fff;
+  text-decoration: none;
+  padding-right:2rem ;
+}
+.logo:hover, .linkText:hover{
+  color:#fd82b1;
+  transform: scale(1.4);
+}
+.ee{
+  color:#e04386;
+}
+.subHeader{
   text-align: center;
+background-color: #e04386;
+color: #ffffff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#quote{
+color: #26004d;
+margin-top: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#getStarted{
+  background-color: #26004d;
+  width: 15vw;
+  border-radius: 4rem;
+  font-size: 1.1em;
+  margin-top: 3rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#getStarted:hover{
+  transform: scale(1.1);
 }
+.cardImg{
+  height:25rem;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carder{
+  color: #ffffff;
+  background-color:  #e04386;
+  border-style:none;
+}
+.footer{
+  /* background: rgba(0, 0, 0, 0.8); */
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 10vh;
+  padding-top: 5vh;
+  height: 70vh;
+}
+.foot,.footLinks{
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footLinks:hover{
+  color:#fd82b1;
+  transform: scale(1.4);
 }
