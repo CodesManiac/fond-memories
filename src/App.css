@@ -1,20 +1,32 @@
 .header {
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
-  height: 12vh;
+  min-height: 12vh;
+}
+a:hover{
+  text-decoration: none;
 }
 .logo {
   color: #ffffff;
 }
 .linkText {
   color: #fff;
+  font-size: 1.1em;
   text-decoration: none;
   padding-right: 2rem;
+}
+.active{
+  color: #fd82b1;
+  font-size: 1.2em;
 }
 .logo:hover,
 .linkText:hover {
   color: #fd82b1;
-  transform: scale(1.4);
+  font-size: larger;
+  text-decoration: none!important;
+}
+.wer{
+  text-decoration: none;
 }
 .ee {
   color: #e04386;
@@ -22,6 +34,7 @@
 .subHeader {
   text-align: center;
   background-color: #e04386;
+  text-decoration: none;
   color: #ffffff;
   border-radius: 0;
 }
@@ -32,7 +45,7 @@
 #getStarted {
   background-color: #26004d;
   width: 15vw;
-  border-radius: 4rem;
+  border-radius:4rem;
   font-size: 1.1em;
   margin-top: 3rem;
 }
@@ -48,7 +61,6 @@
   border-style: none;
 }
 .footer {
-  /* background: rgba(0, 0, 0, 0.8); */
   background-color: #000000;
   color: #ffffff;
   margin-top: 10vh;

@@ -1,0 +1,107 @@
+.registrationContainer {
+  margin: auto !important;
+
+  width: 70vw;
+  height: 85vh;
+  display: flex;
+  margin-top: 8vh !important;
+  justify-content: center !important;
+  border-radius: 100px;
+}
+::placeholder {
+  color: white;
+}
+#welcome {
+  font-size: 3.5em;
+  color: white;
+}
+.registrationContainer div {
+  width: 50%;
+  text-align: center;
+
+  /* background-image: linear-gradient(to-bottom,rgba(0,0,0,0.2)rgba(0,0,0,0.75)); */
+  justify-content: center !important;
+}
+#imageDiv {
+  background-image: url("../assets/registrationBackground.jpg");
+  /* opacity: 0.1; */
+  /* background-image: linear-gradient(to-bottom,rgba(0,0,0,0.2)rgba(0,0,0,0.75)); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px 0px 0px 50px;
+}
+#regForm {
+  justify-content: center !important;
+  align-items: center;
+  align-content: center !important;
+  /* background-color: #3287d4; */
+  background-color: #e04386;
+  border-radius: 0px 50px 50px 0px;
+  color: white;
+}
+#regHead{
+  margin-top: 1rem;
+}
+#loginHead{
+  margin-top: 10rem;
+}
+button {
+  width: 15vw;
+  height: 6vh;
+  /* background-color: #d64574; */
+  background-color: #26004d;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+input {
+  width: 20vw;
+  height: 1vh;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  margin-top: 1rem;
+  /* border-color: #d64574; */
+  border-color: #26004d;
+  border-radius: 1rem;
+}
+textarea {
+  padding: 1rem;
+  height: 10vh;
+}
+select,
+textarea {
+  width: 20vw;
+  color: white;
+  padding: 5px;
+  background: transparent;
+  border-color: #26004d;
+  border-width: 2px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+select option {
+  background-color: #e04386;
+}
+.s option:hover{
+  cursor: pointer;
+  background-color: #26004d!important;
+}
+input:focus,textarea:focus,select:focus{
+  outline: none;
+  background-color: #fd82b1;
+}
+.li {
+  color: #26004d;
+  text-decoration: none;
+}
+.li:hover {
+  font-size: larger;
+  color: #26004d;
+  text-decoration: none;
+}

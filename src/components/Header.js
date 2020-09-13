@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { withRouter, NavLink } from "react-router-dom";
 class Header extends Component {
   render() {
     return (
@@ -11,26 +12,40 @@ class Header extends Component {
         className="header"
       >
         <Container>
-          <Navbar.Brand href="#home">
-            <h2 className="logo">M<span className="ee">ee</span><span>m</span>o</h2>
+          <Navbar.Brand href="/">
+            <h2 className="logo">
+              M<span className="ee">ee</span>
+              <span>m</span>o
+            </h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
-            <Nav>
-              <Nav.Link href="#about">
-                <h6 className="linkText">About</h6>
-              </Nav.Link>
-              <Nav.Link href="#help">
-                <h6 className="linkText">Help</h6>
-              </Nav.Link>
-              <Nav.Link href="#signup">
-                <h6 className="linkText">Sign up</h6>
-              </Nav.Link>
-              <Nav.Link href="#login">
-                <h6 className="linkText">Login</h6>
-              </Nav.Link>
-            </Nav>
+            <NavLink to="/about" className="linkText" activeClassName="active">
+              About
+            </NavLink>
+            <NavLink
+              exact
+              to="/help"
+              className="linkText"
+              activeClassName="active"
+            >
+              Help
+            </NavLink>
+            <NavLink
+              to="/form/sign-up"
+              className="linkText"
+              activeClassName="active"
+            >
+              Sign up
+            </NavLink>
+            <NavLink
+              to="/form/sign-in"
+              className="linkText"
+              activeClassName="active"
+            >
+              Sign in
+            </NavLink>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -38,4 +53,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);

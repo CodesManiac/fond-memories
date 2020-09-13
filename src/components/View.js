@@ -23,7 +23,7 @@ function View() {
           <Card.Body className="cardBody">
             <Card.Title><h4>Save video clips</h4></Card.Title>
             <Card.Text>
-              <h6>What's is better than saving videos that really shows the energy and fun you and your loved ones display during those exciting moments</h6>
+              <h6>What's better than saving videos that really shows the energy and fun you and your loved ones display during those exciting moments</h6>
             </Card.Text>
           </Card.Body>
         </Card>
