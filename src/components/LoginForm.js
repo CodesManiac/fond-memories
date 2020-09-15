@@ -1,30 +1,24 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 class LoginForm extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      emailAddress: "",
-      password:"",
-      ready:false
-    };
-    this.saveData=this.saveData.bind(this);
-  }
+  state = {
+    emailAddress: "",
+    password: "",
+    ready: false,
+  };
   fieldChange = ({ target }) => {
     this.setState({
       [target.name]: target.value,
     });
   };
-  saveData = event=>{
+  saveData = (event) => {
     alert(`You're welcome ${this.state.emailAddress}`);
     event.preventDefault();
-  }
-  
+  };
 
   render() {
-      const{emailAddress,password}=this.state
+    const { emailAddress, password } = this.state;
     return (
       <form onSubmit={this.saveData}>
         <h4 id="loginHead">Login here</h4>
@@ -45,8 +39,12 @@ class LoginForm extends Component {
         />
         <br />
         <button>Login</button>
-        <p>Don't have an account? <Link to="/form/sign-up" id="login" className="li">Register</Link></p>
-
+        <p>
+          Don't have an account?{" "}
+          <Link to="/form/sign-up" id="login" className="li">
+            Register
+          </Link>
+        </p>
       </form>
     );
   }

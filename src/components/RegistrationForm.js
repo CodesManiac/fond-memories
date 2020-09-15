@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class RegistrationForm extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
+state = {
       firstName: "",
       lastName: "",
       emailAddress: "",
@@ -14,15 +11,12 @@ class RegistrationForm extends Component {
       residentialAddress: "",
       gender: "selectGender",
     };
-    this.changeGender = this.changeGender.bind(this);
-    this.saveData = this.saveData.bind(this);
-  }
   fieldChange = ({ target }) => {
     this.setState({
       [target.name]: target.value,
     });
   };
-  changeGender(event) {
+  changeGender=(event)=> {
     this.setState({
       gender: event.target.value,
     });
