@@ -28,7 +28,7 @@ function View() {
             </Card.Title>
             <Card.Text>
               What's better than saving videos that really shows the energy and
-              fun you and your loved ones display during those exciting moments
+              fun you and your loved ones displayed during those exciting moments.
             </Card.Text>
           </Card.Body>
         </Card>
@@ -40,7 +40,7 @@ function View() {
             </Card.Title>
             <Card.Text>
               Saving your thoughts and feelings enables you to relive them
-              another day
+              another day.
             </Card.Text>
           </Card.Body>
         </Card>
